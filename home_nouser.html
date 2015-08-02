@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home | SipLo</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/siplo.css">
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="#"><img src="images/Logo03_mini.png" id = "navbar-logo"></a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <div>
+                <div class="text-center center-block">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="#" data-toggle="tooltip" title="Ask"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+                        <li><a href="#" data-toggle="tooltip" title="Past Paper Discussion"><span class="glyphicon glyphicon-film"></span></a></li>
+                        <li><a href="#" data-toggle="tooltip" title="Class"><span class="glyphicon glyphicon-book"></span></a></li>
+                    </ul>
+                </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
-                    <li><a href="../navbar-static-top/">Static top</a></li>
-                    <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
 </div>
@@ -53,57 +36,87 @@
 <!--<div class="container-fluid" style="top: 50px; position: relative">-->
 <div class="container" style="top: 50px; position: relative">
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8" style="text-align: center; margin-top: 10px">
-            <h4>Howdy, user! This is your profile.</h4>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="text-align: center; margin-top: 10px">
+                <h4>Howdy, user! This is your profile.</h4>
+            </div>
         </div>
-    </div>
-    <div class="row" style="margin-top: 20px">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <input type="text" class="form-control" placeholder="Enter title"/>
-                </div>
-                <div class="panel-body">
-                    <div>
-                        <ul class="list-group">
-                            <li class="list-group-item" style="margin-bottom: -20px">
-                                <textarea class="form-control" rows="5" placeholder="Enter your problem"></textarea>
-
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Attachment"/>
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button">Go!</button>
-                                        </span>
-                                </div>
-                            </li>
-                        </ul>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h5>Start new problem here...</h5>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="padding: 0px 0px">
+                        <input type="text" class="form-control" placeholder="Enter title"/>
                     </div>
-                </div>
-                <div class="panel-footer" style="text-align: right">
-                    <button type="button" class="btn btn-default">Default</button>
+
+                        <div>
+                            <ul class="list-group">
+                                <li class="list-group-item" style="margin-bottom: -20px; padding: 0px 0px">
+                                    <textarea class="form-control" rows="5" placeholder="Enter your problem"></textarea>
+                                    <div class="input-group">
+                                        <input type="file" accept="image/*;capture=camera">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    <div class="panel-footer" style="text-align: right">
+                        <button type="button" class="btn btn-default">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <h5>Recently submitted...</h5>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h5>Recently asked...</h5>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <ul class="list-group">
-                <li class="list-group-item">1</li>
-                <li class="list-group-item">2</li>
-                <li class="list-group-item">3</li>
-                <li class="list-group-item">4</li>
-                <li class="list-group-item">5</li>
-            </ul>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Title1
+                            </div>
+                            <div class="col-md-8" >
+                                Body1
+                            </div>
+                        </div>
+                    </li><li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Title1
+                            </div>
+                            <div class="col-md-8" >
+                                Body1
+                            </div>
+                        </div>
+                    </li><li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Title1
+                            </div>
+                            <div class="col-md-8" >
+                                Body1
+                            </div>
+                        </div>
+                    </li><li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Title1
+                            </div>
+                            <div class="col-md-8" >
+                                Body1
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
