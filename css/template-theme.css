@@ -59,7 +59,7 @@ hr {
     position: static;
     right: 0;
     top: 0;
-    background-color:#59D573;
+    background-color: #aec3ac;
     width: auto;
   /*
     background-image:url('/assets/example/bg_suburb.jpg');
@@ -304,6 +304,7 @@ small.text-muted {
 .wrapper{
     position: relative;
     width: auto;
+    height: auto;
 }
 
 #sidebar{
