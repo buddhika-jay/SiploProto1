@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/siplo.css">
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div>
@@ -16,7 +17,7 @@
                 <a class="navbar-brand" href="#"><img src="images/Logo03_mini.png" id = "navbar-logo"></a>
             </div>
             <div>
-                <div class="text-center center-block">
+                <div>
                     <ul class="nav navbar-nav">
                         <li><a href="#" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home"></span></a></li>
                         <li><a href="#" data-toggle="tooltip" title="Ask"><span class="glyphicon glyphicon-question-sign"></span></a></li>
@@ -36,37 +37,61 @@
 <!--<div class="container-fluid" style="top: 50px; position: relative">-->
 <div class="container" style="top: 50px; position: relative">
     <div class="row">
+        <!--Greeting Heading-->
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" style="text-align: center; margin-top: 10px">
                 <h4>Howdy, user! This is your profile.</h4>
             </div>
         </div>
+        <!--/Greeting Heading-->
         <div class="row" style="margin-top: 20px">
+            <!--Lefte space-->
             <div class="col-md-2"></div>
+            <!--/left space-->
+            <!-- Center Col-->
             <div class="col-md-8">
+                <!-- Heading-->
                 <h5>Start new problem here...</h5>
+                <!-- /Heading-->
                 <div class="panel panel-default">
-                    <div class="panel-heading" style="padding: 0px 0px">
-                        <input type="text" class="form-control" placeholder="Enter title"/>
-                    </div>
-
                         <div>
                             <ul class="list-group">
                                 <li class="list-group-item" style="margin-bottom: -20px; padding: 0px 0px">
                                     <textarea class="form-control" rows="5" placeholder="Enter your problem"></textarea>
-                                    <div class="input-group">
-                                        <input type="file" accept="image/*;capture=camera">
-                                    </div>
                                 </li>
                             </ul>
                         </div>
 
-                    <div class="panel-footer" style="text-align: right">
-                        <button type="button" class="btn btn-default">Submit</button>
+                    <div>
+
                     </div>
+                    <!-- Submit Button and footer-->
+
+                    <div class="panel-footer" style="text-align: right">
+                        <!-- Select Subject-->
+                        <div class="row">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Select Subject
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Maths</a></li>
+                                    <li><a href="#">Physics</a></li>
+                                    <li><a href="#">chemistry</a></li>
+                                </ul>
+                            </div>
+                            <!-- /Select Subject-->
+                            <button type="button" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                    <!-- /Submit Button and footer-->
+                </div>
+                <div class="col-md-6">
                 </div>
             </div>
+            <!-- /Center Col-->
         </div>
         <div class="row">
             <div class="col-md-2"></div>
