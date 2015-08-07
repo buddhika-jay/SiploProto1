@@ -2,3 +2,12 @@
     /*width: 30px;*/
     /*height: 30px;*/
 }
+
+.footer{
+    background-color: lightgray;
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
