@@ -2,6 +2,7 @@
     /*width: 30px;*/
     /*height: 30px;*/
 }
+<<<<<<< HEAD
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -23,3 +24,14 @@
 
 
 }
+=======
+
+.footer{
+    background-color: lightgray;
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+>>>>>>> 5f49ab34a50d5802884e240e2c1779bb326fd81e
